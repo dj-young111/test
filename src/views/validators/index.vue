@@ -69,7 +69,7 @@
                     <td><a :href="'/block/'+item.firstBlock">{{item.firstBlock}}</a></td>
                     <td><a :href="'/block/'+item.lastBlock">{{item.lastBlock}}</a></td>
                     <td>
-                      <value-format className="text-dark font-size-3" :value="item.coinsToString||'0'" :unitCurrency="'HT'"></value-format>
+                      <value-format className="text-dark font-size-3" :value="item.coinsToString||'0'" :unitCurrency="'AAC'"></value-format>
                     </td>
                     <td>{{item.thirtyMinutesOutputBlockNum || 0}}</td>
                     <td>{{item.oneHourOutputBlockNum || 0}}</td>

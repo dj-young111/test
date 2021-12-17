@@ -74,7 +74,7 @@
                        {{item.compilerVersion}}
                     </td>
                     <td>
-                      <value-format className="text-dark font-size-3" :value="item.balance || '0'"></value-format> HT
+                      <value-format className="text-dark font-size-3" :value="item.balance || '0'"></value-format> AAC
                     </td>
                     <td>{{item.txNum||0}}</td>
                     <td>

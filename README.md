@@ -1,11 +1,11 @@
-# hb-scan
+# aac-scan
 
 ## Build Setup
 
 ``` bash
 
 # Clone project
-git clone git@bitbucket.org:oxchains/hb-scan.git
+git clone 
 
 # Install dependencies
 

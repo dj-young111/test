@@ -69,9 +69,9 @@
                             </div>
                             <span class="badge bg-soft-secondary mr-2">{{
                               item.type === 3
-                                ? "HRC-20"
+                                ? "ARC-20"
                                 : item.type === 4
-                                ? "HRC-721"
+                                ? "ARC-721"
                                 : ""
                             }}</span>
                             <!--<i class="fa fa-badge-check text-info ml-auto" style="padding-right: 2px;"></i>-->
@@ -107,13 +107,13 @@
             <div class="col-md-6 col-lg-6 card-divider">
               <div class="card-top-item">
                 <div class="avatar">
-                  <img
+                  <!-- <img
                     style="width: 100%"
                     width="48"
                     height="48"
-                    src="../../images/ht.svg"
-                    alt="HT Logo"
-                  />
+                    src=""
+                    alt="Logo"
+                  /> -->
                 </div>
                 <div>
                   <h2 class="font-size-1 text-uppercase text-secondary">
@@ -121,7 +121,7 @@
                   </h2>
                  <div class="text-size-1 text-link" href="javascript:;"
                         >${{home.htPrice||0}}
-                        <span class="text-secondary">
+                        <!-- <span class="text-secondary">
                           @ {{ formatDecimal(home.htToBtc || 0, 13) }} {{$t('home.content1-1')}}</span
                         ><span
                           class="small font-weight-medium"
@@ -136,8 +136,8 @@
                           {{ home.increase > 0 ? "+" : ""
                           }}{{
                             formatDecimal(home.increase || 0, 2) || 0
-                          }}%</span
-                        ></div
+                          }}%</span> -->
+                        </div
                       >
                 </div>
               </div>
@@ -158,7 +158,7 @@
                       <a class="text-size-1 text-link" href="javascript:;"
                         >${{ home.marketCap || 0 }}
                         <span class="small text-secondary text-link"
-                          >({{ home.totalNums || 0 }} HT)</span
+                          >({{ home.totalNums || 0 }} AAC)</span
                         ></a
                       ></el-button
                     >
@@ -347,7 +347,7 @@
                                       class="u-label u-label--xs u-label--badge-in u-label--secondary text-center"
                                     >
                                       {{item.reward}}
-                                      <span class="danwei">HT</span>
+                                      <span class="danwei">AAC</span>
                                     </span>
                                   </el-button>
                                 </el-tooltip>
@@ -365,7 +365,7 @@
                                     class="u-label u-label--xs u-label--badge-in u-label--secondary text-right htlabel"
                                     >
                                     <span class="htnum">{{item.reward}}</span>
-                                    <span class="htname">HT</span>
+                                    <span class="htname">AAC</span>
                                     </span>
                                 </el-button>
                               </el-tooltip>
@@ -426,7 +426,7 @@
                               <span class="d-inline-block d-sm-none mr-1"
                                 >TX#</span
                               >
-                              <span class="hash-tag text-truncate"  v-if="item.from == 'GENESIS'">{{item.txhash}}</span>
+                              <span class="hash-tag text-truncate"  v-if="item.from == 'GENESIS'"><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate">{{item.txhash}}</a></span>
                               <el-tooltip class="item" effect="dark" :content="item.txhash" placement="top" v-else>
                             <el-button type="text" class="font-weight-normal font-size-3" style="padding: 0;color: #3F7FFF;">
                               <a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" :href="'/tx/'+item.txhash">{{item.txhash}}</a>
@@ -473,8 +473,8 @@
                                   <span
                                     class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-truncate htlabel"
                                     >
-                                    <span class="htnum">{{item.value}}</span>
-                                    <span class="htname">HT</span>
+                                    <span class="htnum">{{item.value}} </span>
+                                    <span class="htname">AAC</span>
                                     </span>
                                 </el-button>
                               </el-tooltip>
@@ -891,7 +891,7 @@ export default {
       text-align: right;
     }
     .htname {
-      width: 2em;
+      width: 3em;
       margin-right: 5px;
     }
   }

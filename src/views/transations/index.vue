@@ -89,12 +89,12 @@
                           <hr class="hr-space">
                           <!-- Transaction Fee -->
                           <h5 class="font-size-1 font-weight-bold mb-1">{{$t('transaction.txFee')}}:</h5>
-                          <div>{{item.txFee}} HT ($ {{item.txFeeDollar}})</div>
+                          <div>{{item.txFee}} AAC ($ {{item.txFeeDollar}})</div>
                           <!-- End Transaction Fee -->
                           <hr class="hr-space">
                           <!-- Gas Info -->
                           <h5 class="font-size-1 font-weight-bold mb-1">{{$t('transaction.gasInfo')}}:</h5>
-                          <div>{{txDetailData.gasUsed}} Gas Used From {{txDetailData.gas}} Gas Limit @ {{formatDecimal(accDiv(txDetailData.gasPrice||0,1e18),9)}} HT ({{formatDecimal(accDiv(txDetailData.gasPrice||0,1e9),0)}} Gwei)</div>
+                          <div>{{txDetailData.gasUsed}} Gas Used From {{txDetailData.gas}} Gas Limit @ {{formatDecimal(accDiv(txDetailData.gasPrice||0,1e18),9)}} AAC ({{formatDecimal(accDiv(txDetailData.gasPrice||0,1e9),0)}} Gwei)</div>
                           <!-- End Gas Info -->
                           <hr class="hr-space">
                           <!-- Nonce -->
@@ -198,7 +198,7 @@
                       </span>
                   </td>
                   <td>
-                    <value-format className="text-dark font-size-3" :value="item.value||'0'"></value-format> HT
+                    <value-format className="text-dark font-size-3" :value="item.value||'0'"></value-format> AAC
                   </td>
                   <td style="display: flex;justify-content: space-between;align-items: center">
                     <value-format className="font-size-3 text-secondary" :value="item.txFee||'0'"></value-format>

@@ -9,8 +9,8 @@
           <h5 class="text-primary" v-html="$t('faucet.tip2')" v-if="!isHTFaucet"></h5>
         </div>
         <div class="card-container">
-          <span class="card-one" :class="{ 'active': isHTFaucet }" @click="switchToHT">HT</span>
-          <span class="card-two" :class="{ 'active': !isHTFaucet }" @click="switchToErc">hrc20</span>
+          <span class="card-one" :class="{ 'active': isHTFaucet }" @click="switchToHT">AAC</span>
+          <span class="card-two" :class="{ 'active': !isHTFaucet }" @click="switchToErc">ARC20</span>
         </div>
         <div class="mb-5 input-container" v-if="!isHTFaucet">
           <select v-model="contractAddress" class="custom-select custom-select-sm">

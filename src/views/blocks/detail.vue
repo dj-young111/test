@@ -116,7 +116,7 @@
                   {{$t('block.blockReward')}}:
                 </div>
                 <div class="col-md-9">
-                  <value-format className="text-dark font-size-3 text-break text-left" :unitCurrency="'HT'"  :value="blockData.rewardToString||'0'"></value-format>
+                  <value-format className="text-dark font-size-3 text-break text-left" :unitCurrency="'AAC'"  :value="blockData.rewardToString||'0'"></value-format>
                 </div>
               </div>
               <hr class="hr-space">
@@ -125,7 +125,7 @@
                   class="fal fa-question-circle text-secondary mr-1"></i>Uncles Reward:
                 </div>
                 <div class="col-md-9">
-                  <value-format className="text-dark font-size-3 text-break" :unitCurrency="'HT'"  :value="blockData.rewardToString||'0'"></value-format>
+                  <value-format className="text-dark font-size-3 text-break" :unitCurrency="'AAC'"  :value="blockData.rewardToString||'0'"></value-format>
                 </div>
               </div>
               <hr class="hr-space d-none">

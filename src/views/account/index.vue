@@ -40,7 +40,7 @@
                   <a :href="'/address/'+item.address">{{item.address}}</a>
                 </td>
                 <td>
-                  <value-format className="text-dark font-size-3" :unitCurrency="'HT'" :value="item.value||'0'"></value-format>
+                  <value-format className="text-dark font-size-3" :unitCurrency="'AAC'" :value="item.value||'0'"></value-format>
                 </td>
                 <td>{{item.txNum||0}}</td>
               </tr>

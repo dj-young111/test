@@ -4,8 +4,8 @@
       <div class="row footer-content">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div style="margin-bottom: 1.25rem">
-            <img width="25" src="../../../images/ht.png" alt="Huobi Logo">
-            <span class="h5 text-white" style="margin-left: .75rem">Powered by Huobi ECO Chain</span>
+            <img width="25" src="" alt="Logo">
+            <span class="h5 text-white" style="margin-left: .75rem">Powered by Double-A Chain</span>
           </div>
           <p class="text-white">
             {{$t('footer.title')}}
@@ -19,7 +19,7 @@
             </el-tooltip>
             <el-tooltip class="item" effect="dark" :content="$t('footer.contact')" placement="top">
               <el-button type="text">
-                <a class="btn btn-sm btn-icon btn-soft-light icon-center" href="mailto:DevContracts@huobi.com">
+                <a class="btn btn-sm btn-icon btn-soft-light icon-center" href="">
                   <i  Class="fa fa-envelope"></i>
                 </a>
               </el-button>

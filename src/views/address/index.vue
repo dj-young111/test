@@ -33,7 +33,7 @@
               <div class="row align-items-center">
                 <div class="col-md-4 mb-1 mb-md-0">{{$t('common.balance')}}:</div>
                 <div class="col-md-8">
-                  <value-format className="text-dark font-size-3 text-break w-100 text-left" :unitCurrency="'HT'"  :value="addressData.balance||'0'"></value-format>
+                  <value-format className="text-dark font-size-3 text-break w-100 text-left" :unitCurrency="'AAC'"  :value="addressData.balance||'0'"></value-format>
                 </div>
               </div>
               <hr class="hr-space">
@@ -78,7 +78,7 @@
                                 <li
                                   class="list-custom-divider d-flex justify-content-between align-items-center font-size-1 py-1 px-2 mb-1">
                                   <span><i
-                                    class="fa fa-angle-right text-secondary"></i><strong>{{assetList[0].type === 3 ? 'HRC-20' : assetList[0].type === 4 ? 'HRC-721' : ''}} {{$t('address.tokens')}}</strong> ({{assetSearch.length || 0}})</span>
+                                    class="fa fa-angle-right text-secondary"></i><strong>{{assetList[0].type === 3 ? 'ARC-20' : assetList[0].type === 4 ? 'ARC-721' : ''}} {{$t('address.tokens')}}</strong> ({{assetSearch.length || 0}})</span>
                                 </li>
                                 <li class="list-custom list-custom-BEP-20" v-for="(item,index) in assetSearch"
                                     :key="index">
@@ -378,7 +378,7 @@
                       </span>
                     </td>
                     <td>
-                      <value-format :unitCurrency="'HT'" className="text-dark font-size-3" :value="item.value||'0'"></value-format>
+                      <value-format :unitCurrency="'AAC'" className="text-dark font-size-3" :value="item.value||'0'"></value-format>
                     </td>
                     <td style="display: flex;justify-content: space-between">
                       <value-format className="text-secondary font-size-3" :value="item.txFee||'0'"></value-format>
@@ -403,7 +403,7 @@
                   <i class="fas fa-sort-amount-down text-secondary"></i>&nbsp;{{$t('address.tab2Tip1')}} <a
                   :href="'/blocks/25/1?m='+address">{{minedTotal.totalMinedBlockNum || 0}} {{$t('address.tab2Tip2')}} </a>
                   {{$t('address.tab2Tip3')}}
-                  <value-format className="text-secondary font-size-3" :unitCurrency="'HT'" :value="minedTotal.fees||'0'"></value-format>
+                  <value-format className="text-secondary font-size-3" :unitCurrency="'AAC'" :value="minedTotal.fees||'0'"></value-format>
                   {{$t('address.tab2Tip4')}}
                 </p>
                 <nav class="mb-0 mb-md-0" aria-label="page navigation">
@@ -476,7 +476,7 @@
                       </div>
                     </td>
                     <td>
-                      <value-format className="text-dark font-size-3" :unitCurrency="'HT'" :value="item.reward||'0'"></value-format>
+                      <value-format className="text-dark font-size-3" :unitCurrency="'AAC'" :value="item.reward||'0'"></value-format>
                     </td>
                   </tr>
                   </tbody>

@@ -84,7 +84,7 @@
                   {{item.gasLimit}}
                 </td>
                 <td>
-                  <value-format className="text-dark font-size-3" :value="item.reward||'0'"></value-format> HT
+                  <value-format className="text-dark font-size-3" :value="item.reward||'0'"></value-format> AAC
                 </td>
               </tr>
             </tbody>

@@ -51,7 +51,7 @@ export function getTopAccountList(params) {
 // 查询某个账户的交易列表
 export function getAddressTxList(params) {
   return request({
-    url: `/hsc/list/tx/${params.address}/${params.pageNo}/${params.pageSize}`,
+    url: `/hsc/list/address/tx/${params.address}/${params.pageNo}/${params.pageSize}`,
     method: 'get'
   })
 }

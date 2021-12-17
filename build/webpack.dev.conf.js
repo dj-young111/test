@@ -54,7 +54,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true,
-      favicon: resolve('logo.png')
+      // favicon: resolve('logo.png')
     }),
   ]
 })

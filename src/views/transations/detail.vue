@@ -274,7 +274,7 @@
                       class="text-left"
                     >
                     <el-button type="text" class="text-break">
-                        <value-format className="text-dark font-size-3 text-left text-break" childenClass="u-label u-label--value u-label--secondary rounded mr-1" :value="txData.value||'0'" :unitCurrency="'HT'"></value-format>
+                        <value-format className="text-dark font-size-3 text-left text-break" childenClass="u-label u-label--value u-label--secondary rounded mr-1" :value="txData.value||'0'" :unitCurrency="'AAC'"></value-format>
                         <value-format class="text-dark font-size-3 text-left text-break" currency="( $" :value="txData.valueDollar||'0'" :unitCurrency="')'"></value-format>
                     </el-button>
                   </el-tooltip>
@@ -299,7 +299,7 @@
                       :content="$t('transaction.txFeeTip1')"
                       placement="top" effect="dark">
                     <el-button type="text" class="text-break">
-                      <value-format className="text-dark font-size-3 text-left text-break" :value="txData.fee||'0'" :unitCurrency="'HT'"></value-format>
+                      <value-format className="text-dark font-size-3 text-left text-break" :value="txData.fee||'0'" :unitCurrency="'AAC'"></value-format>
                       <value-format class="text-dark font-size-3 text-left text-break" currency="( $" :value="txData.feeDollar||'0'" :unitCurrency="')'"></value-format>
                     </el-button>
                   </el-tooltip>
@@ -377,7 +377,7 @@
                       placement="top" effect="dark">
                       <el-button type="text">
                         <span
-                          class="text-dark">{{formatDecimal(accDiv(txData.gasPrice || 0, 1e18), 9)}} HT ({{formatDecimal(accDiv(txData.gasPrice || 0, 1e9), 0)}} Gwei)</span>
+                          class="text-dark">{{formatDecimal(accDiv(txData.gasPrice || 0, 1e18), 9)}} AAC ({{formatDecimal(accDiv(txData.gasPrice || 0, 1e9), 0)}} Gwei)</span>
                       </el-button>
                     </el-tooltip>
                   </div>
@@ -448,7 +448,7 @@
                            <textarea readonly="" spellcheck="false"
                                      class="form-control bg-light text-secondary text-monospace p-3" rows="10"
                                      v-else-if="index===1"
-                           >Function: {{txData.funcName}} &#13;&#13;MethodID: {{txData.methodID}}{{ShowArgs(txData.args)}}</textarea>
+                           >Function: {{txData.funcName}} &#13;&#13;MethodID: {{txData.methodID}}{{ShowArgs( txData.args ? txData.args: txData.encodeArgs)}}</textarea>
                          </span>
                         </el-button>
                       </el-tooltip>
@@ -713,10 +713,12 @@
       },
       ShowArgs(v) {
         let data = '';
-        v.map((item, i) => {
-          const argslist = '[' + i + ']: ' + item;
-          data = data + '\n' + argslist
-        })
+        if (v) {
+            v.map((item, i) => {
+            const argslist = '[' + i + ']: ' + item;
+            data = data + '\n' + argslist
+          })
+        }
         return data
       },
       showOptions() {

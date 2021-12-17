@@ -5,13 +5,13 @@
         <nav class="navbar navbar-expand-md">
           <div>
             <a class="navbar-brand text-dark font-weight-bolder" href="/">
-              <img height="24" :src="logosrc()" alt="Huobi Logo" />
+              <!-- <img height="24" :src="logosrc()" alt="Logo" />
               <img
                 height="20"
                 :src="logotestsrc()"
                 alt="test"
                 v-if="showTestLogo"
-              />
+              /> -->
             </a>
           </div>
           <div>

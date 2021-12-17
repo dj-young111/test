@@ -163,7 +163,7 @@
                           <div class="col-md-4">
                             <el-tooltip
                               placement="top" effect="dark">
-                              <div slot="content">When you compile your contract <br> code you can specify the HECO  <br> virtual machine version to compile  <br> for to avoid particular features or <br> behaviours.</div>
+                              <div slot="content">When you compile your contract <br> code you can specify the Double-A Chain  <br> virtual machine version to compile  <br> for to avoid particular features or <br> behaviours.</div>
                               <el-button style="padding: 0;"  type="text">
                                 <i class="far fa-question-circle text-muted"></i>
                               </el-button>

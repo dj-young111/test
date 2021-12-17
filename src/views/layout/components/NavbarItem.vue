@@ -182,10 +182,10 @@ export default {
   created() {
     if (process.env.NETWORK !== 'mainnet') {
       // 如果不是正式网，添加水龙头
-      this.navData[this.navData.length - 1].subTitle.push({
-        title: this.$t('navBar.navigation6-1'),
-        path: '/faucet'
-      });
+      // this.navData[this.navData.length - 1].subTitle.push({
+      //   title: this.$t('navBar.navigation6-1'),
+      //   path: '/faucet'
+      // });
     }
     const language = navigator.language || navigator.userLanguage;
     const lang = this.$cookies.get('CultureInfo') || language;

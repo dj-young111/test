@@ -20,8 +20,8 @@
               <h2 class="card-header-title">
                 {{$t('address.overview')}}
                 <span class="u-label u-label--xs u-label--secondary rounded ml-1">
-                  <b v-if="tokenDetail.type===3">HRC-20</b>
-                  <b v-if="tokenDetail.type===4">HRC-721</b>
+                  <b v-if="tokenDetail.type===3">ARC-20</b>
+                  <b v-if="tokenDetail.type===4">ARC-721</b>
                 </span>
                </h2>
             </div>

@@ -4,7 +4,7 @@
       <div class="list-title">
         <h1 class="h4 font-weight-normal mb-0">
           {{$t('common.token')}}{{$t('address.tracker')}}
-          <a class="u-label u-label--xs u-label--secondary rounded color-strong ml-2">HRC-721</a>
+          <a class="u-label u-label--xs u-label--secondary rounded color-strong ml-2">ARC-721</a>
         </h1>
       </div>
     </div>

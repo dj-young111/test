@@ -7,15 +7,15 @@
             <a
               class="navbar-brand text-dark font-weight-bolder"
               href="/"
-              aria-label="HecoScan"
+              aria-label="AACScan"
             >
-              <img height="24" :src="logosrc()" alt="Huobi Logo" />
+              <!-- <img height="24" :src="logosrc()" alt="Logo" />
               <img
                 height="20"
                 :src="logotestsrc()"
                 alt="test"
                 v-if="showTestLogo"
-              />
+              /> -->
             </a>
           </div>
           <div>
@@ -39,7 +39,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-md header-navbar">
           <div class="value text-nowrap rounded">
-            <span class="text-dark">HT: ${{ home.htPrice || 0 }}</span>
+            <span class="text-dark">AAC: ${{ home.htPrice || 0 }}</span>
             <span
               :class="
                 home.increase > 0
@@ -116,9 +116,9 @@
                             </div>
                             <span class="badge bg-soft-secondary mr-2">{{
                               item.type === 3
-                                ? "HRC-20"
+                                ? "ARC-20"
                                 : item.type === 4
-                                ? "HRC-721"
+                                ? "ARC-721"
                                 : ""
                             }}</span>
                             <!--<i class="fa fa-badge-check text-info ml-auto" style="padding-right: 2px;"></i>-->
